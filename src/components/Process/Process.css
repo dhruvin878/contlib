@@ -1,0 +1,190 @@
+.process {
+  min-height: calc(100vh - 100px);
+
+  background: #f5f1e8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 100px 5% 40px;
+
+  overflow: hidden;
+}
+
+.process-container {
+  width: 100%;
+  max-width: 1600px;
+
+  margin: auto;
+}
+
+.process-tag {
+  display: block;
+
+  text-align: center;
+
+  color: #4a8c98;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 5px;
+
+  margin-bottom: 20px;
+}
+
+.process h2 {
+  text-align: center;
+
+  color: #073d52;
+
+  font-size: clamp(3rem, 5vw, 5rem);
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  margin-bottom: 90px;
+}
+
+/* TIMELINE */
+
+.timeline {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  gap: 20px;
+
+  align-items: start;
+}
+
+.timeline-line {
+  position: absolute;
+
+  top: 60px;
+  left: 8%;
+  right: 8%;
+
+  height: 2px;
+
+  background: #d8ddd7;
+
+  z-index: 0;
+}
+
+/* STEP */
+
+.step {
+  position: relative;
+
+  text-align: center;
+
+  z-index: 2;
+}
+
+.step-number {
+  width: 90px;
+  height: 90px;
+
+  margin: auto;
+
+  background: #ffffff;
+
+  border-radius: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #5e8d98;
+
+  font-size: 2rem;
+  font-weight: 700;
+
+  border: 2px solid #ece4d6;
+
+
+
+  margin-bottom: 25px;
+}
+
+.step.active .step-number {
+  /* background: #073d52; */
+
+  color: #5e8d98;
+
+  
+}
+
+.step h3 {
+  color: #073d52;
+
+  font-size: 1.6rem;
+
+  margin-bottom: 12px;
+}
+
+.step p {
+  color: #6e8087;
+
+  font-size: 0.95rem;
+
+  line-height: 1.7;
+
+  max-width: 220px;
+
+  margin: auto;
+}
+
+/* TABLET */
+
+@media (max-width: 1200px) {
+
+  .process {
+    min-height: auto;
+    padding: 120px 5% 80px;
+  }
+
+  .timeline {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+  }
+
+  .timeline-line {
+    display: none;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .process {
+    padding: 100px 5% 60px;
+  }
+
+  .process h2 {
+    font-size: 2.5rem;
+
+    margin-bottom: 50px;
+  }
+
+  .timeline {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .step-number {
+    width: 80px;
+    height: 80px;
+
+    font-size: 1.6rem;
+  }
+
+  .step h3 {
+    font-size: 1.3rem;
+  }
+} 

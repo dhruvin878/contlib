@@ -1,0 +1,178 @@
+.impact-section {
+  min-height: calc(100vh - 100px);
+
+  background: #06485d;
+
+  display: flex;
+  align-items: center;
+
+  padding-top: 110px;
+  padding-bottom: 40px;
+}
+
+.impact-container {
+  width: 88%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.impact-tag {
+  display: block;
+
+  text-align: center;
+
+  color: rgba(255,255,255,.45);
+
+  font-size: 14px;
+  letter-spacing: 5px;
+
+  margin-bottom: 15px;
+}
+
+.impact-title {
+  text-align: center;
+
+  color: white;
+
+  font-size: clamp(3rem,5vw,5rem);
+
+  font-weight: 800;
+
+  margin-bottom: 70px;
+}
+
+.impact-stats {
+  display: grid;
+
+  grid-template-columns: repeat(4,1fr);
+
+  gap: 25px;
+
+  margin-bottom: 35px;
+}
+
+.impact-card {
+  background: rgba(255,255,255,.06);
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  border-radius: 30px;
+
+  height: 170px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transition: .35s ease;
+}
+
+.impact-card:hover {
+  transform: translateY(-8px);
+
+  background: rgba(255,255,255,.08);
+}
+
+.impact-card h3 {
+  color: white;
+
+  font-size: 4rem;
+  font-weight: 800;
+
+  margin-bottom: 12px;
+}
+
+.impact-card p {
+  color: rgba(255,255,255,.45);
+
+  font-size: 1.2rem;
+}
+
+.impact-results {
+  display: grid;
+
+  grid-template-columns: repeat(3,1fr);
+
+  gap: 25px;
+}
+
+.result-card {
+  background: rgba(255,255,255,.06);
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  border-radius: 28px;
+
+  min-height: 120px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 30px;
+
+  gap: 25px;
+
+  transition: .35s;
+}
+
+.result-card:hover {
+  transform: translateY(-6px);
+}
+
+.result-card span {
+  font-size: 3rem;
+
+  font-weight: 800;
+
+  color: #f5e8d0;
+
+  white-space: nowrap;
+}
+
+.result-card p {
+  color: rgba(255,255,255,.85);
+
+  font-size: 1.15rem;
+
+  line-height: 1.5;
+}
+
+@media (max-width:1200px) {
+
+  .impact-stats {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .impact-results {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:768px) {
+
+  .impact-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-card {
+    height: 150px;
+  }
+
+  .impact-card h3 {
+    font-size: 3rem;
+  }
+
+  .impact-title {
+    font-size: 3rem;
+  }
+
+  .result-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .result-card span {
+    font-size: 2.5rem;
+  }
+}

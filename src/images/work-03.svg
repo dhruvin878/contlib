@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Abstract project visual three">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#faf4e7"/>
+      <stop offset="100%" stop-color="#f0e3ca"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg3)"/>
+  <rect x="140" y="140" width="920" height="520" rx="42" fill="#17303b" fill-opacity="0.08"/>
+  <path d="M160 550C310 430 420 390 590 420C760 450 880 390 1040 250V660H160V550Z" fill="#3e7a80" fill-opacity="0.22"/>
+  <circle cx="340" cy="260" r="92" fill="#b4622e" fill-opacity="0.2"/>
+</svg>
